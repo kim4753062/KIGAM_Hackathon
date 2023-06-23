@@ -1,0 +1,47 @@
+The more relevant choices of the method implemented for this demonstration are:
+
+Only real instances with any type of undesirable event that have normal period are used. 
+어떤 비정상 이벤트가 포함되었든, 정상 운영 구간이 포함된 실제 인스턴스만을 사용하였음.
+The types of events that do not have normal period are not appropriate for this demonstration. 
+정상 운영 구간이 포함되지 않은 이벤트들은 이 코드에서 적절치 않음.
+Only instances with enough normal period are used. An initial part of each normal period is used in the training;
+충분한 정상 운영 구간이 포함된 인스턴스만 사용됨. 각각의 초기 정상 운영 구간이 훈련에 사용됨.
+
+The considered metrics are calculated globally by counting the total true positives, false negatives and false positives. 
+고려된 검증 기준치는 전역적으로 TP, FN, FP의 수를 세어 계산됨.
+Samples from transient and in-regime periods are grouped as abnormal;
+천이 운영 구간과 비정상 운영 구간은 비정상으로 분류됨.
+
+[The specialists consider that the normality suffers with concept drift. 
+전문가들은, 정상성이 concept drift의 영향을 받는다고 고려함. (시간에 따라 예측 대상의 통계적 특성이 바뀌는 현상)
+As we don’t need to learn the concept drift itself, this method supposes that a dedicated model for each well is trained from time to time;
+concept drift를 학습할 필요는 없으니, 이 방법은 각 유정만을 위한 모델이 시간에 따라 훈련됨을 가정함.]
+
+Only classifiers (six in total) implemented in the scikit-learn package are used. 
+scikit-learn 패키지 내의 6가지 분류기가 구현됨.
+As optimization of metrics is not a focus of this work, the parameters of the classifiers are not optimized;
+하이퍼파라미터의 최적화는 이루어지지 않음.
+
+A specific sampling strategy with sliding window is used for each type of period.
+각 기간의 종류에 대해, sliding window 샘플링 기법이 사용됨.
+In normal periods, the first observatins are used for training and the last ones are used for testing. 
+정상 운영 기간들의 경우, 첫 관측이 훈련에, 마지막 관측이 시험에 사용됨.
+In transient periods, it is sought to use observations throughout the transient as a whole for testing (only). 
+천이 운영 구간들의 경우, 천이구간 전체 관측을 시험에만 사용함.
+In in-regime periods, the first observations are privileged for testing (only);
+비정상 운영 구간들의 경우, 첫 관측이 시험에만 사용됨.
+
+Before each round of training and testing:
+훈련 및 시험에 앞서서,
+The used samples (not instances) are appropriately normalized with z-score;
+사용된 샘플들은 (인스턴스가 아님) z-score로 정규화됨.
+The variables of samples (not instances) used for training that have a number of NaNs above a threshold or that have a standard deviation below another threshold are discarded.
+샘플들의 변수들 (인스턴스가 아님) 중 기준치 이상의 NaN 개수를 가지거나 표준편차가 일정 이하인 경우 제외됨.
+
+For the sake of execution time, it is used a subset of the minimal set of features of the tsfresh package. 
+실행 시간 절약을 위해 tsfresh 패키지에서 추출한 최소 특징 집합의 부분 집합을 사용함.
+Other features can improve the classifiers performances;
+다른 특성들 역시 분류기의 성능을 높일 수 있음.
+
+All required random_state are assigned to a constant for results to be reproducible.
+난수 고정으로 재생성 가능하게 결과를 뽑음.

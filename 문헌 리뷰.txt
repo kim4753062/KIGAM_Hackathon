@@ -1,0 +1,26 @@
+문헌 리뷰
+== A Realistic and Public Dataset with Rare Undesirable Real Events in Oil Wells ==
+
+===== 8개 변수들 ======
+Fluid pressure in the PDG (P-PDG): sensor closest to the reservoir and which usually fails due to the level of hostility of the environment. 
+Furthermore, as the PDG is a piece of equipment that is screwed onto the production column itself, in case of failure of this sensor, 
+its replacement is considered costly and risky, as it demands the replacement of the production column itself;
+
+Pressure and temperature of the fluid in the TPT (P-TPT and T-TPT): sensors internal to the ANM (Árvore de Natal Molhada, Wet Christmas Tree)
+whose reliability is considered good by professionals in the field of Oil Lifting and Flow;
+
+Upstream fluid pressure to the Production Choke valve (P-MON-CKP): sensor also considered of good reliability, when present;
+
+Fluid temperature downstream of the Production Choke valve (T-JUS-CKP): in this position there may be fluids from several different wells, 
+but this sensor is considered relevant because in general there is no fluid temperature sensor upstream of the Production Choke.
+
+"Essas três variáveis adicionais são ligadas a sensores posicionados na linha de serviço e podem ser úteis no prognóstico de anomalias que 
+se manifestam levação tanto natural quanto artificial."
+== "These three additional variables are linked to sensors positioned on the service line and can be useful in the prognosis of anomalies 
+that manifest themselves both naturally and artificially."
+
+Fluid pressure downstream of the Gas Lift Choke valve (P-JUS-CKGL);
+
+Fluid temperature downstream of the Gas Lift Choke valve (T-JUS-CKGL);
+
+Gas Lift Flow (QGL).
