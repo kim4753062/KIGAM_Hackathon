@@ -9,15 +9,27 @@
 1. 데이터 분석 개요: "주어진 데이터에 대한 도메인 지식 기반 분석 및 방법론 개요"
 [목표 산출물: 유정으로부터 이상 징후를 감지하는 인공지능 모형을 개발하고 해당 모델을 주최기관에서 제공하는 분석 플랫폼에서 구현]
 탐지하고자 하는 문제의 종류: 8가지
+공통 참고문헌: "A realistic and public dataset with rare undesirable real events in oil wells"
+https://www.sciencedirect.com/science/article/pii/S0920410519306357
 - Abrupt increase of BSW
+-- 참고문헌: https://onepetro.org/SPEPBOGR/proceedings/88OGR/All-88OGR/SPE-17311-MS/68181
 - Spurious closure of DHSV
+-- 참고문헌: 
 - Severe slugging
+-- 참고문헌: https://www.sciencedirect.com/science/article/pii/S0959152412000637
 - Flow instability
+-- 참고문헌: https://www.researchgate.net/profile/Muhammad-Theyab/publication/324248681_Severe_Slugging_Control_Simulation_of_Real_Case_Study/links/5ac75205aca272abdc5cdc1e/Severe-Slugging-Control-Simulation-of-Real-Case-Study.pdf
+          https://onepetro.org/SPEAPOG/proceedings/10APOG/All-10APOG/SPE-133188-MS/100449
 - Rapid productivity loss
+-- 참고문헌: https://onepetro.org/NACECORR/proceedings/CORR15/All-CORR15/NACE-2015-6147/64626
 - Quick restriction in PCK
+-- 참고문헌: 
 - Scaling in PCK
+-- 참고문헌: 
 - Hydrate in production line
+-- 참고문헌: https://onepetro.org/OTCONF/proceedings/00OTC/All-00OTC/OTC-11963-MS/40777
 >> 탐지하고자 하는 문제가 발생하는 원인과, 대표적인 징후에 대해 조사 >> "문제가 발생하면 원인이 무엇이고, 징후는 현재 변수에서 이렇게 나타난다고 할 수 있다."
+
 
 2. 모형 계획: "적용할 예상 인공지능 방법론 개요, 예층성능 향상을 위한 모형 설계 계획 및 설명, 모형 실행 환경에 대한 기술 (기반 코드, 적용 환경 등)"
 >> ML 모델: XGBoost, 시계열 적합한 LSTM 등.
@@ -26,10 +38,11 @@
 
 
 3. (예상) 결과 및 성능 평가: "(예비)인공지능 모형 적용 결과 또는 예상되는 성과 기재"
-
+>> 종욱과 함께 Test run 돌려보고 결과 내보기.
 
 
 4. 분석플랫폼 활용 경험: "Web 기반 분석플랫폼 (예: Colab, Azure, Dataiku 등)의 활용 경험 기재"
+>> Enverus 등? 종욱이가 써본 경험이 있는지가 궁금하네.
 
 
 ======================================== 홈페이지 내용 ========================================
