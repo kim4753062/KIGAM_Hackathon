@@ -11,20 +11,28 @@
 탐지하고자 하는 문제의 종류: 8가지
 공통 참고문헌: "A realistic and public dataset with rare undesirable real events in oil wells"
 https://www.sciencedirect.com/science/article/pii/S0920410519306357
-- Abrupt increase of BSW
+
+- Abrupt increase of BSW (Basic Sediment and Water)
+-- 공통 참고문헌 내용: "Artificial injection 또는 Natural aquifer로 인해 원래는 시간이 지남에 따라 BSW가 증가하나, 갑작스러운 BSW의 증가는 flow assurance, lower oil production, oil lifting,
+incrustation, industrial plant processing, recovery factor 등에 영향을 미침. 이 문제의 자동 감지는 production 또는 artificial injection을 관리하게 하여 막을 수 있음."
 -- 참고문헌: https://onepetro.org/SPEPBOGR/proceedings/88OGR/All-88OGR/SPE-17311-MS/68181
-- Spurious closure of DHSV
+
+- Spurious closure of DHSV (Downhole Safety Valves)
+-- 공통 참고문헌 내용: "Pressure drop in the hydraulic actuator와 같은 지표면에서의 징후 없이 closure가 발생할 수 있음. 이 문제의 감지가 제때 이루어지면 운영 절차의 교정을 통해 다시 열 수 있고,
+이를 통해 생산량 손실과 추가 비용이 들어가는 것을 방지할 수 있음."
 -- 참고문헌: 
+
 - Severe slugging
+-- 공통 참고문헌 내용: ""
 -- 참고문헌: https://www.sciencedirect.com/science/article/pii/S0959152412000637
 - Flow instability
 -- 참고문헌: https://www.researchgate.net/profile/Muhammad-Theyab/publication/324248681_Severe_Slugging_Control_Simulation_of_Real_Case_Study/links/5ac75205aca272abdc5cdc1e/Severe-Slugging-Control-Simulation-of-Real-Case-Study.pdf
-          https://onepetro.org/SPEAPOG/proceedings/10APOG/All-10APOG/SPE-133188-MS/100449
+		  https://onepetro.org/SPEAPOG/proceedings/10APOG/All-10APOG/SPE-133188-MS/100449
 - Rapid productivity loss
 -- 참고문헌: https://onepetro.org/NACECORR/proceedings/CORR15/All-CORR15/NACE-2015-6147/64626
-- Quick restriction in PCK
+- Quick restriction in PCK (Production choke)
 -- 참고문헌: 
-- Scaling in PCK
+- Scaling in PCK (Production choke)
 -- 참고문헌: 
 - Hydrate in production line
 -- 참고문헌: https://onepetro.org/OTCONF/proceedings/00OTC/All-00OTC/OTC-11963-MS/40777
